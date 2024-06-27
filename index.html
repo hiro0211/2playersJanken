@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2人対戦じゃんけんゲーム</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>2人対戦じゃんけんゲーム</h1>
+        </header>
+        <main>
+            <div class="game-area">
+                <div class="player-area" id="player1-area">
+                    <h2>プレイヤー1</h2>
+                    <div class="choices">
+                        <button id="gu-1" class="choice-btn"><img src="images/グー-removebg-preview.png"
+                                alt="グー"></button>
+                        <button id="choki-1" class="choice-btn"><img src="images/チョキ-removebg-preview.png"
+                                alt="チョキ"></button>
+                        <button id="pa-1" class="choice-btn"><img src="images/パー-removebg-preview.png"
+                                alt="パー"></button>
+                    </div>
+                    <button id="decide-btn-1" class="decide-btn" disabled>決定</button>
+                </div>
+                <div class="player-area" id="player2-area">
+                    <h2>プレイヤー2</h2>
+                    <div class="choices">
+                        <button id="gu-2" class="choice-btn"><img src="images/グー-removebg-preview.png"
+                                alt="グー"></button>
+                        <button id="choki-2" class="choice-btn"><img src="images/チョキ-removebg-preview.png"
+                                alt="チョキ"></button>
+                        <button id="pa-2" class="choice-btn"><img src="images/パー-removebg-preview.png"
+                                alt="パー"></button>
+                    </div>
+                    <button id="decide-btn-2" class="decide-btn" disabled>決定</button>
+                </div>
+                <div class="result">
+                    <div class="hands">
+                        <div class="hand">
+                            <p>プレイヤー1の選択</p>
+                            <div id="player1-hand" class="hand-image"></div>
+                        </div>
+                        <div class="hand">
+                            <p>プレイヤー2の選択</p>
+                            <div id="player2-hand" class="hand-image"></div>
+                        </div>
+                    </div>
+                    <p class="judgment">結果: <span id="judgment"></span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/janken.js"></script>
+</body>
+
+</html>
